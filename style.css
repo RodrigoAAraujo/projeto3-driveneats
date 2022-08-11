@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+}
+
+/*---------Formatting----------*/
+
+header h1{
+    font-size: 44px;
+    line-height: 54.63px;
+    letter-spacing: -1.2%;
+}
+header h2{
+    font-size: 18px;
+    line-height: 21.1px;
+    font-weight: 400;
+}
+main h1{
+    font-size: 26px;
+    line-height: 32.28px;
+    letter-spacing: 1.8%;
+}
+
+.choice h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+.choice h4{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+
+}
+.choice p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17.58px;
+}
+
+/*----------Header----------*/
+
+header{
+    background-color: #CF2B2B;
+    ;
+    color: white;
+    padding: 10px 20px;
+}
+
+/*----------Main------------*/
+
+.choice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: scroll;
+    margin: 0 10px;
+}
+
+.option{
+    width: 172px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px #00000040;
+    padding: 15px;
+}
+.option img{
+    margin: 0 auto;
+}
