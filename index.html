@@ -18,27 +18,132 @@
 
             <h1>Primeiro, seu prato</h1>
 
-            <div class="choice">
-                <div class="option">
-                    <img src="images/frango_yin_yang 1.png">
+            <div class="choice food">
+                <div onclick="selectFood(this)">
+                    <img src="images/food/frango_yin_yang 1.png">
                     <h3>Frango Yang Yin</h3>
-                    <p>Frango, salada, batata frita e arroz gratinado</p>
+                    <p>Frango, salada, batata frita e arroz</p>
                     <h4>R$ 14,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="option">
-                    <img src="">
-                    <h3>Frango Yang Yin</h3>
-                    <p>Frango, salada, batata frita e arroz gratinado</p>
-                    <h4>R$ 14,90</h4>
+                <div onclick="selectFood(this)">
+                    <img src="images/food/contra_filé.jpg">
+                    <h3>Contra filé</h3>
+                    <p>Contra filé, farofa, salada, arroz e feijão</p>
+                    <h4>R$ 12,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div onclick="selectFood(this)">
+                    <img src="images/food/bisteca.jpg">
+                    <h3>Bisteca Suína</h3>
+                    <p>Bisteca, ovo, farofa, liguiça, arroz e feijão</p>
+                    <h4>R$ 15,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div onclick="selectFood(this)">
+                    <img src="images/food/linguica_com_ovo.jpg">
+                    <h3>Linguiça com ovo</h3>
+                    <p>Arroz, feijão, salada, linguiça e ovo</p>
+                    <h4>R$ 9,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div onclick="selectFood(this)">
+                    <img src="images/food/picanha.jpg">
+                    <h3>Picanha</h3>
+                    <p>Picanha com batata frita, arroz e feijão</p>
+                    <h4>R$ 19,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
 
+            <h1>Agora, sua bebida</h1>
+
+            <div class="choice drink">
+                <div id="coca" onclick="selectDrink('#coca')">
+                    <img src="images/drinks/coquinha.png">
+                    <h3>Coquinha Gelada</h3>
+                    <p>Lata 350ml</p>
+                    <h4>R$ 5,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="fanta" onclick="selectDrink('#fanta')">
+                    <img src="images/drinks/fanta.jpg">
+                    <h3>Fanta</h3>
+                    <p>Fanta caseira 300ml</p>
+                    <h4>R$ 4,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="agua" onclick="selectDrink('#agua')">
+                    <img src="images/drinks/agua-gratis-em-restaurantes.jpg">
+                    <h3>Água</h3>
+                    <p>Água 350ml</p>
+                    <h4>R$ 3,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="limonada" onclick="selectDrink('#limonada')">
+                    <img src="images/drinks/limonada.jpg">
+                    <h3>Limonada</h3>
+                    <p>Limonada 500ml</p>
+                    <h4>R$ 6,50</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="suco" onclick="selectDrink('#suco')">
+                    <img src="images/drinks/sucos.jpg">
+                    <h3>Sucos</h3>
+                    <p>Sucos 300ml</p>
+                    <h4>R$ 7,50</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <h1>Por fim, sua sobremesa</h1>
+
+            <div class="choice dessert">
+                <div id="pudim" onclick="selectDessert('#pudim')">
+                    <img src="images/dessert/pudim 1.png">
+                    <h3>Delicioso Pudim</h3>
+                    <p>Pudim com calda</p>
+                    <h4>R$ 7,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="petit" onclick="selectDessert('#petit')">
+                    <img src="images/dessert/petit-gateau.jpg">
+                    <h3>Petit Gâteau</h3>
+                    <p>Petit gâteau delícia</p>
+                    <h4>R$ 13,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="sorvete" onclick="selectDessert('#sorvete')">
+                    <img src="images/dessert/sorvete.jpg">
+                    <h3>Sorvete</h3>
+                    <p>2 bolas de sorvete</p>
+                    <h4>R$ 7,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="pe-de-moleque" onclick="selectDessert('#pe-de-moleque')">
+                    <img src="images/dessert/pe-moleque.jpg">
+                    <h3>Pé de Moleque</h3>
+                    <p>Pé de moleque clássico</p>
+                    <h4>R$ 5,20</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div id="goiabada" onclick="selectDessert('#goiabada')">
+                    <img src="images/dessert/goiabada-cascao-2.jpg">
+                    <h3>Goiabada</h3>
+                    <p>Goiabada delícia</p>
+                    <h4>R$ 9,90</h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
 
         </main>
+        <footer>
+            <button class="send" onclick="reviewFood()">Selecione 3 itens para fechar seu pedido</button>
+        </footer>
 
         
 
-
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="interaction.js"></script>
     </body>
 

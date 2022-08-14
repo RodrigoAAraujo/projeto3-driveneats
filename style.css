@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
 }
 *{
     box-sizing: border-box;
@@ -10,6 +11,9 @@ body{
 h1{
     font-family: 'Righteous', cursive;
     font-weight: 400;
+}
+ion-icon{
+    display: none;
 }
 
 /*---------Formatting----------*/
@@ -34,44 +38,113 @@ main h1{
     font-weight: 700;
     font-size: 16px;
     line-height: 18.75px;
+    margin: 5px 0;
 }
 .choice h4{
     font-weight: 400;
     font-size: 16px;
     line-height: 18.75px;
-
+    margin: 5px 0;
 }
 .choice p{
     font-weight: 300;
     font-size: 15px;
     line-height: 17.58px;
+    color: #A6A6A6;
 }
 
-/*----------Header----------*/
+.send{
+    font-size: 20px ;
+    line-height: 23.44px;
+    letter-spacing: 1.8%;
+    font-weight: 400;
+}
+
+/*---------------------Header-Footer--------------------*/
 
 header{
     background-color: #CF2B2B;
-    ;
     color: white;
     padding: 10px 20px;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top:0; left:0;
+    z-index: 1;
 }
 
-/*----------Main------------*/
+footer{
+    background-color: #ffffff;
+    padding: 15px 25px;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    bottom:0; left: 0;
+    z-index: 1;
+}
+.send{
+    color: #ffffff;
+    background-color: #cbcbcb;
+    border: none;
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+/*----------------------Main------------------------*/
+
+main{
+    margin: 90px 0px 110px 0px;
+}
+
+main h1{
+    padding: 27px 0px 17px 19px;
+}
 
 .choice{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    overflow-y: hidden;
     overflow-x: scroll;
-    margin: 0 10px;
+    padding: 0 10px;
 }
-
-.option{
-    width: 172px;
+.choice div{
     border-radius: 9px;
-    box-shadow: 0px 0px 10px -4px #00000040;
     padding: 15px;
+    margin: 0px 8px;
+    background-color: #ffffff;
+    position: relative;
 }
-.option img{
+.choice img{
+    width: 144px;
     margin: 0 auto;
 }
+.selected ion-icon{
+    color: #32B72F;
+    width: 20px;
+    position: absolute;
+    right: 15px; bottom: 15px;
+    display: block;
+}
+
+/*categories differeciation*/
+.food div{
+    width: 172px;
+    height: 216px;
+}
+.drink div, .dessert div {
+    width: 172px;
+    height: 202px;
+}
+
+/*------------------JavaScript-On------------------*/
+
+.selected{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+
+}
+.available{
+    background-color: #32B72F;
+}
+
+
